@@ -67,14 +67,21 @@ body ul li a {
 	display: block
 }
 #nav_menu li ul{
-	display: none;
+	display: block;
 	position: absolute;
 	top: 100%;
-
+	list-style-type: circle;
 }
 
 #nav_menu li ul li{
 	float: none;
+}
+
+#nav_menu ::after {
+	content: "\00a0 ";
+	clear: both;
+	display: block;
+
 }
 
 /* the styles for the section */

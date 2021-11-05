@@ -39,6 +39,51 @@ header {
 	border-bottom: 3px solid #931420;
 	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
+
+body ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+body ul li{
+	float: left;
+}
+body ul li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+#nav_menu li a #current{
+	color: yellow;
+}
+
+#nav_menu li ul:hover{
+	display: block
+}
+#nav_menu li ul{
+	display: block;
+	position: absolute;
+	top: 100%;
+	list-style-type: circle;
+}
+
+#nav_menu li ul li{
+	float: none;
+}
+
+#nav_menu ::after {
+	content: "\00a0 ";
+	clear: both;
+	display: block;
+
+}
 /* the styles for the section */
 section {
 	width: 525px;
